@@ -1,0 +1,18 @@
+@page "/KristianChartsDemo"
+@inject IJSRuntime JsRuntime
+
+<PageTitle>Counter</PageTitle>
+
+<div class="container bg-white mx-auto text-center p-5">
+    Test
+
+    <button @onclick="OnButtonClicked">Draw Chart</button>
+    <div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+</div>
+
+@code{
+    async Task OnButtonClicked()
+    {
+          await JsRuntime.InvokeVoidAsync("drawChart");   
+    }
+}
