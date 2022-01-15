@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/carebear/Documents/Shell Scripts/BlazorDemo/BlazorDemo.csproj": {}
+    "/mnt/Dev/dotnet/BlazorDemo/BlazorDemo.csproj": {}
   },
   "projects": {
-    "/home/carebear/Documents/Shell Scripts/BlazorDemo/BlazorDemo.csproj": {
+    "/mnt/Dev/dotnet/BlazorDemo/BlazorDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/carebear/Documents/Shell Scripts/BlazorDemo/BlazorDemo.csproj",
+        "projectUniqueName": "/mnt/Dev/dotnet/BlazorDemo/BlazorDemo.csproj",
         "projectName": "BlazorDemo",
-        "projectPath": "/home/carebear/Documents/Shell Scripts/BlazorDemo/BlazorDemo.csproj",
+        "projectPath": "/mnt/Dev/dotnet/BlazorDemo/BlazorDemo.csproj",
         "packagesPath": "/home/carebear/.nuget/packages/",
-        "outputPath": "/home/carebear/Documents/Shell Scripts/BlazorDemo/obj/",
+        "outputPath": "/mnt/Dev/dotnet/BlazorDemo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/carebear/.nuget/NuGet/NuGet.Config"
@@ -59,6 +59,10 @@
           "assetTargetFallback": true,
           "warn": true,
           "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.0, 6.0.0]"
+            },
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
               "version": "[6.0.0, 6.0.0]"

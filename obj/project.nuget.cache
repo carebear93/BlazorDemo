@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wsaAwE82cAt37gsalkSmTPNMd177kgS+87bwjcUZh3t0OIkC8clyehSQYCo5TV9C+WhMXmrtE2O40FwKRtBS/A==",
+  "dgSpecHash": "l8vUMaBEhPprJ5PdTxNKPBWbQErkYN6m6Z9xPSjrvqM9G0TXh60el5HHd9zjQvY8eBVXgbyQD3I2GGHMGhRaiw==",
   "success": true,
-  "projectFilePath": "/home/carebear/Documents/Shell Scripts/BlazorDemo/BlazorDemo.csproj",
+  "projectFilePath": "/mnt/Dev/dotnet/BlazorDemo/BlazorDemo.csproj",
   "expectedPackageFiles": [
     "/home/carebear/.nuget/packages/microsoft.aspnetcore.authorization/6.0.0/microsoft.aspnetcore.authorization.6.0.0.nupkg.sha512",
     "/home/carebear/.nuget/packages/microsoft.aspnetcore.components/6.0.0/microsoft.aspnetcore.components.6.0.0.nupkg.sha512",
@@ -33,7 +33,8 @@
     "/home/carebear/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/home/carebear/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
     "/home/carebear/.nuget/packages/system.text.json/6.0.0/system.text.json.6.0.0.nupkg.sha512",
-    "/home/carebear/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/6.0.0/microsoft.netcore.app.runtime.mono.browser-wasm.6.0.0.nupkg.sha512"
+    "/home/carebear/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/6.0.0/microsoft.netcore.app.runtime.mono.browser-wasm.6.0.0.nupkg.sha512",
+    "/home/carebear/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.0/microsoft.aspnetcore.app.ref.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
