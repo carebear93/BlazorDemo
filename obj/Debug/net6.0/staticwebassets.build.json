@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ks2B83KVTAhbcmtDDXbUGa7kN0r6JPz6t9uO5MRYcRE=",
+  "Hash": "BQbWmdP9ds4n6shBTqY1GxQUKKnncQXtbjsXchjA6zE=",
   "Source": "BlazorDemo",
   "BasePath": "/",
   "Mode": "Root",
@@ -7038,12 +7038,12 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/mnt/Dev/dotnet/BlazorDemo/wwwroot/data/meteor-landings.json",
+      "Identity": "/mnt/Dev/dotnet/BlazorDemo/wwwroot/data/meteorLanding.json",
       "SourceId": "BlazorDemo",
       "SourceType": "Discovered",
       "ContentRoot": "/mnt/Dev/dotnet/BlazorDemo/wwwroot/",
       "BasePath": "/",
-      "RelativePath": "data/meteor-landings.json",
+      "RelativePath": "data/meteorLanding.json",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7052,7 +7052,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/data/meteor-landings.json"
+      "OriginalItemSpec": "wwwroot/data/meteorLanding.json"
     },
     {
       "Identity": "/mnt/Dev/dotnet/BlazorDemo/wwwroot/data/MeteorLandingModel.cs",

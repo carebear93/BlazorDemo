@@ -256,39 +256,6 @@
         }
       },
       {
-        "HashCode": -307583578,
-        "Kind": "Components.Component",
-        "Name": "BlazorDemo.Pages.FetchData",
-        "AssemblyName": "BlazorDemo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorDemo.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": 1891132605,
-        "Kind": "Components.Component",
-        "Name": "BlazorDemo.Pages.FetchData",
-        "AssemblyName": "BlazorDemo",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorDemo.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorDemo.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1514155300,
         "Kind": "Components.Component",
         "Name": "BlazorDemo.Pages.Index",
@@ -322,35 +289,35 @@
         }
       },
       {
-        "HashCode": 1520371300,
+        "HashCode": -307583578,
         "Kind": "Components.Component",
-        "Name": "BlazorDemo.Pages.KristianChartDemo",
+        "Name": "BlazorDemo.Pages.FetchData",
         "AssemblyName": "BlazorDemo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "KristianChartDemo"
+            "TagName": "FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorDemo.Pages.KristianChartDemo"
+          "Common.TypeName": "BlazorDemo.Pages.FetchData"
         }
       },
       {
-        "HashCode": -1568088006,
+        "HashCode": 1891132605,
         "Kind": "Components.Component",
-        "Name": "BlazorDemo.Pages.KristianChartDemo",
+        "Name": "BlazorDemo.Pages.FetchData",
         "AssemblyName": "BlazorDemo",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "BlazorDemo.Pages.KristianChartDemo"
+            "TagName": "BlazorDemo.Pages.FetchData"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorDemo.Pages.KristianChartDemo",
+          "Common.TypeName": "BlazorDemo.Pages.FetchData",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13742,11 +13709,6 @@
     {
       "FilePath": "/mnt/Dev/dotnet/BlazorDemo/Pages/FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "/mnt/Dev/dotnet/BlazorDemo/Pages/KristianChartDemo.razor",
-      "TargetPath": "Pages\\KristianChartDemo.razor",
       "FileKind": "component"
     },
     {
