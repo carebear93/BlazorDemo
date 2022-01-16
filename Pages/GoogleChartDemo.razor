@@ -1,5 +1,6 @@
 @page "/GoogleChartsDemo"
 @inject IJSRuntime JsRuntime
+@inject HttpClient Http
 
 <title>Meteorite</title>
 
@@ -8,17 +9,30 @@
 </div>
 
 <body>
-    <div class="container bg-white mx-auto text-center p-5" style="width:800px; margin:0 auto;">
-    
-        <div id="pie_chart" style="width: 900px; height: 300px;"></div>
-
-    </div>
+    <!-- this is where the Google Chart is displayed -->
+    <div id="pie_chart" style="height: 400px;"></div>
 </body>
 
 @code{
-    protected override void OnInitialized()
+    private MeteorPage[]? drawPieChart, meteorData;
+
+    protected override async Task OnInitializedAsync()
     {
-        // Test Comment
-        JsRuntime.InvokeVoidAsync("drawChart");
+        // Test Comment, Remove Later
+        meteorData = await Http.GetFromJsonAsync<MeteorPage[]>("data/meteorLanding.json");
+    }
+
+    private void PlotData(double[] xs, double[] ys)
+    {
+        // This function calls a JavaScript function to update the chart.
+        // Notice how multiple parameters are passed in.
+        JsRuntime.InvokeVoidAsync("drawChart", new { xs, ys });
+    }
+
+    public class MeteorPage
+    {
+        public DateTime year { get; set; }
+
+        public string name { get; set; }
     }
 }
