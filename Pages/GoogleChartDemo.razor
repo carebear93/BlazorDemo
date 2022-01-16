@@ -5,34 +5,19 @@
 <title>Meteorite</title>
 
 <div class="container bg-white mx-auto text-center p-5">
-    <div class="display-6">Google Charts to display Data</div>
+    <div class="display-6">Google Charts Demo</div>
 </div>
 
 <body>
     <!-- this is where the Google Chart is displayed -->
-    <div id="pie_chart" style="height: 400px;"></div>
+    <div id="pie_chart" style="height: 400px; margin:0 auto;"></div>
 </body>
 
 @code{
-    private MeteorPage[]? drawPieChart, meteorData;
-
-    protected override async Task OnInitializedAsync()
-    {
-        // Test Comment, Remove Later
-        meteorData = await Http.GetFromJsonAsync<MeteorPage[]>("data/meteorLanding.json");
-    }
-
     private void PlotData(double[] xs, double[] ys)
     {
         // This function calls a JavaScript function to update the chart.
         // Notice how multiple parameters are passed in.
-        JsRuntime.InvokeVoidAsync("drawChart", new { xs, ys });
-    }
-
-    public class MeteorPage
-    {
-        public DateTime year { get; set; }
-
-        public string name { get; set; }
+        JsRuntime.InvokeVoidAsync("initChart", new { xs, ys });
     }
 }

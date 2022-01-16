@@ -9,6 +9,9 @@
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="BlazorDemo.styles.css" rel="stylesheet" />
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,9 +24,6 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-
-    <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
 
       // Load the Visualization API and the corechart package.
@@ -31,6 +31,29 @@
 
       // Set a callback to run when the Google Visualization API is loaded.
       google.charts.setOnLoadCallback(initChart);
+
+      // Get JSON Data
+      var jsonData = $.ajax({
+          url: "data/meteorLanding.json",
+          dataType: "json",
+          async: false
+          }).responseJSON;
+      
+      // Do some data processing here
+      // Loop through the name column store to a map
+      const map = new Map();
+      for (let i = 0; i < 10; i++){
+        // Store a count of each name
+        var count = map.get(jsonData[i].name)
+        // If the name is does exist then set the count for that name to 0
+        if (count === undefined) {
+          count = 0;
+        }
+        // And for each name found increment by 1
+        count = count + 1;
+        // Set the value and count within the map
+        map.set(jsonData[i].name, count)
+      }
 
       function initChart() {
         var xs = [];
@@ -44,13 +67,14 @@
         var ys = params.ys;
 
         var data = new google.visualization.DataTable();
-        data.addColumn('name', 'Location');
-        data.addRow('dateTime', 'Year');
+        data.addColumn('string', 'Location');
+        data.addColumn('number', 'Count');
+        data.addRows(Array.from(map));
 
         var options = {
             xAxis: { title: 'Horizontal Axis Label' },
             yAxis: { title: 'Vertical Axis Label' },
-            title: 'This is a Google Chart in Blazor',
+            title: { title: 'This is a Google Chart in Blazor'},
             legend: { position: 'none' },
         };
 

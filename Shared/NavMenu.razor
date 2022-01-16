@@ -1,6 +1,6 @@
 ﻿<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">BlazorDemo</a>
+        <a class="navbar-brand" href=""><img src="css/logo/wood.png" width="85px" height="20px"/> </a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,11 +29,6 @@
                 <span class="oi oi-bar-chart" aria-hidden="true"></span> Google Charts
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="KristianChartsDemo">
-                <span class="oi oi-pie-chart" aria-hidden="true"></span> Kristian's Charts
-            </NavLink>
-        </div>
     </nav>
 </div>
 
@@ -46,4 +41,7 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
+
+    @code {
+}
 }
