@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BQbWmdP9ds4n6shBTqY1GxQUKKnncQXtbjsXchjA6zE=",
+  "Hash": "dTfgtXzSBEdDx5FixrtS57F4DdEFkllWnfayNUpmWRw=",
   "Source": "BlazorDemo",
   "BasePath": "/",
   "Mode": "Root",
@@ -6883,6 +6883,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/mnt/Dev/dotnet/BlazorDemo/wwwroot/css/logo/wood.png",
+      "SourceId": "BlazorDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "/mnt/Dev/dotnet/BlazorDemo/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "css/logo/wood.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/logo/wood.png"
     },
     {
       "Identity": "/mnt/Dev/dotnet/BlazorDemo/wwwroot/css/open-iconic/FONT-LICENSE",
