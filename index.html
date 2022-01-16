@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>BlazorDemo</title>
+    <base href="/BlazorDemo/" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="BlazorDemo.styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app">Loading...</div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(initChart);
+
+      function initChart() {
+        var xs = [];
+        var ys = [];
+        window.createNewChart({xs, ys});
+    }
+
+    // draw a new chart given X/Y values
+    window.createNewChart = (params) => {
+        var xs = params.xs;
+        var ys = params.ys;
+
+        var data = new google.visualization.DataTable();
+        data.addColumn('name', 'Location');
+        data.addRow('dateTime', 'Year');
+
+        var options = {
+            xAxis: { title: 'Horizontal Axis Label' },
+            yAxis: { title: 'Vertical Axis Label' },
+            title: 'This is a Google Chart in Blazor',
+            legend: { position: 'none' },
+        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('pie_chart'));
+        chart.draw(data, options);
+    };
+
+    window.onresize = function () { initChart(); };
+
+    </script>
+</body>
+
+</html>
